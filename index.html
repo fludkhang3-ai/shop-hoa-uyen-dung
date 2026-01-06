@@ -28,4 +28,127 @@ section{max-width:1100px;margin:auto;padding:60px 20px}
 .card .content{text-align:center;padding:22px}
 .card h3{margin:10px 0}
 .price{color:#a8325e;font-weight:bold}
-.order{margin-top:10px;display:inline
+.order{margin-top:10px;display:inline-block;
+  background:#7b1e3a;color:#fff;
+  padding:10px 22px;border-radius:25px;text-decoration:none}
+.why{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px}
+.why div{
+  background:#fff;padding:25px;border-radius:14px;
+  text-align:center;box-shadow:0 6px 15px rgba(0,0,0,.08)}
+form{
+  background:#fff;padding:30px;border-radius:18px;
+  box-shadow:0 8px 20px rgba(0,0,0,.1)}
+input,select,textarea{
+  width:100%;padding:12px;margin:8px 0;
+  border-radius:10px;border:1px solid #ccc}
+button{
+  width:100%;padding:14px;border:none;
+  background:#7b1e3a;color:#fff;
+  font-size:16px;border-radius:25px}
+footer{
+  background:#3b1d27;color:#fff;text-align:center;padding:35px 20px}
+.fixed{
+  position:fixed;right:16px;bottom:20px;
+  display:flex;flex-direction:column;gap:10px}
+.fixed a{
+  padding:12px 18px;border-radius:30px;
+  color:#fff;text-decoration:none;font-weight:bold}
+.call{background:#2e8b57}
+.zalo{background:#0068ff}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Shop Hoa Tươi Uyên Dung</h1>
+<p>Hoa cao cấp – Thiết kế theo yêu cầu – Giao nhanh Đà Nẵng</p>
+<a class="btn" href="tel:0935006636">📞 0935 006 636</a>
+<a class="btn" href="https://zalo.me/0935346669">💬 Zalo đặt hoa</a>
+</header>
+
+<section>
+<div class="title">
+<h2>Sản phẩm nổi bật</h2>
+<p>Hoa sinh nhật • Hoa cưới • Hoa khai trương</p>
+</div>
+
+<div class="products">
+<div class="card">
+<img src="hoa-sinh-nhat.jpg" alt="Ảnh thật hoa sinh nhật">
+<div class="content">
+<h3>Hoa sinh nhật</h3>
+<div class="price">Liên hệ</div>
+<a class="order" href="#dat-hoa">Đặt hoa</a>
+</div>
+</div>
+
+<div class="card">
+<img src="hoa-cuoi.jpg" alt="Ảnh thật hoa cưới">
+<div class="content">
+<h3>Hoa cưới</h3>
+<div class="price">Liên hệ</div>
+<a class="order" href="#dat-hoa">Đặt hoa</a>
+</div>
+</div>
+
+<div class="card">
+<img src="hoa-khai-truong.jpg" alt="Ảnh thật hoa khai trương">
+<div class="content">
+<h3>Hoa khai trương</h3>
+<div class="price">Liên hệ</div>
+<a class="order" href="#dat-hoa">Đặt hoa</a>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="title"><h2>Vì sao chọn Uyên Dung?</h2></div>
+<div class="why">
+<div>🌸 Hoa tươi mỗi ngày</div>
+<div>🚚 Giao nhanh nội thành</div>
+<div>🎨 Cắm hoa theo yêu cầu</div>
+<div>💖 Tận tâm – uy tín</div>
+</div>
+</section>
+
+<section id="dat-hoa">
+<div class="title"><h2>Đặt hoa nhanh</h2></div>
+<form onsubmit="window.open('https://zalo.me/0935346669','_blank');return false;">
+<input placeholder="Tên khách hàng">
+<input placeholder="Số điện thoại">
+<select>
+<option>Hoa sinh nhật</option>
+<option>Hoa cưới</option>
+<option>Hoa khai trương</option>
+</select>
+<textarea placeholder="Yêu cầu (màu sắc, ngân sách, thời gian giao)"></textarea>
+<button>Gửi yêu cầu qua Zalo</button>
+</form>
+</section>
+
+<section>
+<div class="title"><h2>Fanpage & Bản đồ</h2></div>
+<p style="text-align:center">
+👉 <a href="#" target="_blank">Facebook Shop Hoa Uyên Dung</a>
+</p>
+<iframe
+src="https://www.google.com/maps?q=TDP%20An%20Ng%C3%A3i%20T%C3%A2y%201%20Ho%C3%A0%20Kh%C3%A1nh%20%C4%90%C3%A0%20N%E1%BA%B5ng&output=embed"
+width="100%" height="300" style="border:0;border-radius:16px"></iframe>
+</section>
+
+<footer>
+<p><b>Shop Hoa Tươi Uyên Dung</b></p>
+<p>📍 TDP An Ngãi Tây 1, P. Hoà Khánh, TP. Đà Nẵng</p>
+<p>📞 0935 006 636 – 0935 346 669</p>
+</footer>
+
+<div class="fixed">
+<a class="call" href="tel:0935006636">📞 Gọi</a>
+<a class="zalo" href="https://zalo.me/0935346669">💬 Zalo</a>
+</div>
+
+</body>
+</html>
