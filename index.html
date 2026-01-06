@@ -1,83 +1,208 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shop Hoa Tươi Uyên Dung – Đà Nẵng – Hoa Tươi Cao Cấp</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Shop Hoa Tươi Uyên Dung – Đà Nẵng</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { margin:0; font-family:'Montserrat', sans-serif; background:#fff; color:#333; }
-    header { background:linear-gradient(135deg,#f06292,#e91e63); color:white; padding:60px 20px; text-align:center; }
-    header h1 { font-family:'Playfair Display', serif; font-size:42px; margin-bottom:10px; }
-    nav { display:flex; justify-content:center; gap:20px; padding:15px; background:#fff; box-shadow:0 2px 10px rgba(0,0,0,0.05); position:sticky; top:0; }
-    nav a { text-decoration:none; color:#e91e63; font-weight:600; }
-    .hero { padding:60px 20px; text-align:center; background:#fff7f9; }
-    .hero h2 { font-size:28px; margin-bottom:10px; }
-    .products { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:25px; padding:40px 20px; }
-    .card { border-radius:20px; overflow:hidden; box-shadow:0 8px 20px rgba(0,0,0,0.08); }
-    .card img { width:100%; height:220px; object-fit:cover; }
-    .card .content { padding:20px; }
-    .price { color:#e91e63; font-weight:700; margin:10px 0; }
-    .btn { display:inline-block; padding:10px 18px; background:#e91e63; color:white; border-radius:30px; text-decoration:none; font-size:14px; }
-    .btn:hover { background:#c2185b; }
-    footer { background:#f8bbd0; padding:30px 20px; text-align:center; margin-top:40px; }
-    .zalo { position:fixed; bottom:20px; right:20px; background:#0084ff; color:white; padding:14px 18px; border-radius:50px; text-decoration:none; font-weight:600; box-shadow:0 6px 15px rgba(0,0,0,0.3); }
-    @media(max-width:600px){ header h1{font-size:32px;} .hero h2{font-size:22px;} }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #fff;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg,#ff5f9e,#ff2e75);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      background: white;
+      color: #ff2e75;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+    nav {
+      background: #fff;
+      text-align: center;
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+    }
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #ff2e75;
+      font-weight: bold;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 25px;
+    }
+    .card {
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      overflow: hidden;
+      background: #fff;
+    }
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      background: #f2f2f2;
+    }
+    .card .content {
+      padding: 20px;
+      text-align: center;
+    }
+    .card h3 {
+      margin: 10px 0;
+    }
+    .price {
+      color: #ff2e75;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .contact-btn {
+      display: inline-block;
+      padding: 10px 18px;
+      background: #ff2e75;
+      color: white;
+      border-radius: 25px;
+      text-decoration: none;
+    }
+    .why {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+      gap: 20px;
+      text-align: center;
+    }
+    .why div {
+      padding: 20px;
+      border-radius: 12px;
+      background: #fff4f8;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    .fixed {
+      position: fixed;
+      right: 15px;
+      bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .fixed a {
+      padding: 12px 16px;
+      border-radius: 30px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+    }
+    .call { background: #28a745; }
+    .zalo { background: #0068ff; }
   </style>
 </head>
 <body>
+
 <header>
-  <h1>Shop Hoa Tươi Uyên Dung</h1>
-  <p>Hoa tươi cao cấp – Giao nhanh – Thiết kế theo yêu cầu</p>
+  <h1>Cửa Hàng Hoa Tươi Uyên Dung</h1>
+  <p>Hoa tươi cao cấp – Giao nhanh Đà Nẵng – Thiết kế theo yêu cầu</p>
+  <a class="btn" href="tel:0935006636">📞 Gọi ngay</a>
+  <a class="btn" href="https://zalo.me/0935346669">💬 Đặt hoa Zalo</a>
 </header>
 
 <nav>
-  <a href="#">Trang chủ</a>
-  <a href="#">Sản phẩm</a>
-  <a href="#">Đặt hoa</a>
-  <a href="#">Liên hệ</a>
+  <a href="#home">Trang chủ</a>
+  <a href="#products">Sản phẩm</a>
+  <a href="#contact">Liên hệ</a>
 </nav>
 
-<section class="hero">
-  <h2>Trao hoa – Gửi trọn cảm xúc</h2>
-  <p>Hoa sinh nhật • Hoa cưới • Hoa khai trương (dịch vụ chủ lực)</p>
+<section id="products">
+  <div class="title">
+    <h2>Trao hoa – Gửi trọn cảm xúc</h2>
+    <p>Hoa sinh nhật • Hoa cưới • Hoa khai trương (dịch vụ chủ lực)</p>
+  </div>
+
+  <div class="products">
+    <div class="card">
+      <img src="https://via.placeholder.com/400x300?text=Anh+hoa+sinh+nhat">
+      <div class="content">
+        <h3>Hoa sinh nhật</h3>
+        <div class="price">Liên hệ</div>
+        <a class="contact-btn" href="https://zalo.me/0935346669">Đặt hoa Zalo</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x300?text=Anh+hoa+cuoi">
+      <div class="content">
+        <h3>Hoa cưới</h3>
+        <div class="price">Liên hệ</div>
+        <a class="contact-btn" href="https://zalo.me/0935346669">Đặt hoa Zalo</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x300?text=Anh+hoa+khai+truong">
+      <div class="content">
+        <h3>Hoa khai trương</h3>
+        <div class="price">Liên hệ</div>
+        <a class="contact-btn" href="https://zalo.me/0935346669">Đặt hoa Zalo</a>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="products">
-  <div class="card">
-    <img src="https://via.placeholder.com/400x300?text=Hoa+Hong+Cao+Cap">
-    <div class="content">
-      <h3>Bó Hoa Hồng Cao Cấp</h3>
-      <p class="price">450.000đ</p>
-      <a class="btn" href="https://zalo.me/0936346669" target="_blank">Đặt qua Zalo</a>
-    </div>
+<section>
+  <div class="title">
+    <h2>Vì sao chọn Uyên Dung?</h2>
   </div>
-  <div class="card">
-    <img src="https://via.placeholder.com/400x300?text=Hoa+Sinh+Nhat">
-    <div class="content">
-      <h3>Hoa Sinh Nhật Sang Trọng</h3>
-      <p class="price">650.000đ</p>
-      <a class="btn" href="https://zalo.me/0936346669" target="_blank">Đặt qua Zalo</a>
-    </div>
-  </div>
-  <div class="card">
-    <img src="https://via.placeholder.com/400x300?text=Hoa+Cuoi">
-    <div class="content">
-      <h3>Hoa Cưới Cầm Tay</h3>
-      <p class="price">900.000đ</p>
-      <a class="btn" href="https://zalo.me/0936346669" target="_blank">Đặt qua Zalo</a>
-    </div>
+  <div class="why">
+    <div>🌸 Hoa tươi mỗi ngày</div>
+    <div>🚚 Giao nhanh nội thành</div>
+    <div>🎨 Thiết kế theo yêu cầu</div>
+    <div>💖 Tận tâm – uy tín</div>
   </div>
 </section>
 
-<footer>
-  <p>📞 Hotline: <a href="tel:0936346669">0936 346 669</a> – <a href="tel:0935006636">0935 006 636</a></p>
+<footer id="contact">
+  <p><strong>Shop Hoa Tươi Uyên Dung</strong></p>
   <p>📍 TDP An Ngãi Tây 1, P. Hoà Khánh, TP. Đà Nẵng</p>
-  <iframe src="https://www.google.com/maps?q=TDP%20An%20Ng%C3%A3i%20T%C3%A2y%201%20Ho%C3%A0%20Kh%C3%A1nh%20%C4%90%C3%A0%20N%E1%BA%B5ng&output=embed" width="100%" height="250" style="border:0;border-radius:12px;margin-top:15px;" loading="lazy"></iframe>
-  <p style="margin-top:15px">© 2026 Uyên Dung Flower Boutique</p>
+  <p>📞 0935 006 636 – 0935 346 669</p>
 </footer>
 
-<a class="zalo" href="https://zalo.me/0936346669" target="_blank">💬 Chat Zalo</a>
-<a href="tel:0936346669" style="position:fixed;bottom:80px;right:20px;background:#4CAF50;color:white;padding:14px 18px;border-radius:50px;text-decoration:none;font-weight:600;box-shadow:0 6px 15px rgba(0,0,0,0.3);">📞 Gọi ngay</a>
+<div class="fixed">
+  <a class="call" href="tel:0935006636">📞 Gọi ngay</a>
+  <a class="zalo" href="https://zalo.me/0935346669">💬 Zalo</a>
+</div>
+
 </body>
 </html>
